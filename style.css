@@ -1,1 +1,40 @@
+body {
+    font-family: 'Carter One';
+    background-color: rgb(41, 41, 41);;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
 
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.card {
+    display:flex;
+    background-color: navy;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 100px;
+    color: white;
+    padding:0;
+    margin: 0;
+}
+
+#phrase {
+    font-size: 40px;
+}
