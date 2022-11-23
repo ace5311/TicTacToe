@@ -26,7 +26,7 @@ const gameboard = (() => {
     const player2 = playerFactory('player2', 'O', false);
     const chosen = choiceFactory();
     let turns = 0;
-    let winner = null;
+    let winner = false;
 
     const winningCompare = (playerArray) => {
         playerArray.sort();
@@ -57,6 +57,7 @@ const gameboard = (() => {
         turns=0;
         chosen.player1 = [];
         chosen.player2 = [];
+        phrase.textContent=`Let's play`
     }
 
     const playerTurn = () => {
@@ -83,7 +84,7 @@ const gameboard = (() => {
                     if(winner) phrase.textContent=`${player2.name} has won!`
                 } 
             }
-            if(turns === 9){
+            if(turns === 9 && !winner){
                 phrase.textContent = `This was a Draw!`;
             }
         })}
