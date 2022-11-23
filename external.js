@@ -57,7 +57,7 @@ const gameboard = (() => {
         turns=0;
         chosen.player1 = [];
         chosen.player2 = [];
-        phrase.textContent=`Let's play`
+        phrase.textContent=`Let's Play`
     }
 
     const playerTurn = () => {
