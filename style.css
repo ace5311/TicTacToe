@@ -1,6 +1,6 @@
 body {
     font-family: 'Carter One';
-    background-color: rgb(41, 41, 41);;
+    background-color: rgb(41, 41, 41);
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +28,11 @@ h1{
     justify-content: center;
 }
 
+.bot{
+    display:flex;
+    flex-direction: column;
+}
+
 p {
     font-size: 100px;
     color: white;
@@ -37,4 +42,16 @@ p {
 
 #phrase {
     font-size: 40px;
+}
+
+.btn {
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    font-family: 'Carter One';
 }
