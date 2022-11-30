@@ -58,6 +58,7 @@ const gameboard = (() => {
         chosen.player1 = [];
         chosen.player2 = [];
         phrase.textContent=`Let's Play!`
+        winner=false;
     }
 
     const playerTurn = () => {
